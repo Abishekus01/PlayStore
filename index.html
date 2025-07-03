@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PlayStore by Abishek</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Logo" class="logo">
+    <h1>PlayStore by Abishek</h1>
+    <input type="text" id="searchBar" placeholder="Search apps...">
+    <button id="themeToggle">🌗</button>
+  </header>
+
+  <nav>
+    <button class="filter-btn" data-category="all">All</button>
+    <button class="filter-btn" data-category="games">Games</button>
+    <button class="filter-btn" data-category="tools">Tools</button>
+  </nav>
+
+  <main id="appContainer" class="app-container">
+    <!-- App cards will be inserted by JS -->
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <div class="modal-body">
+        <img id="modalImg" src="" alt="App Image">
+        <div class="modal-info">
+          <h2 id="modalTitle"></h2>
+          <p id="modalSize"></p>
+          <p id="modalDesc"></p>
+        </div>
+
+        <h3>User Feedback</h3>
+        <div id="modalFeedback" class="feedback-container">
+          <p class="no-feedback">No feedback yet. Be the first to comment!</p>
+        </div>
+
+        <textarea id="modalComment" class="feedback-input" placeholder="Your comment (optional)"></textarea>
+        <div class="rating-stars">
+          <input type="radio" name="rating" id="r5" value="5"><label for="r5">★</label>
+          <input type="radio" name="rating" id="r4" value="4"><label for="r4">★</label>
+          <input type="radio" name="rating" id="r3" value="3"><label for="r3">★</label>
+          <input type="radio" name="rating" id="r2" value="2"><label for="r2">★</label>
+          <input type="radio" name="rating" id="r1" value="1"><label for="r1">★</label>
+        </div>
+        <button id="modalSubmit" class="submit-btn">Submit Feedback</button>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Contact: <a href="mailto:consult_with_abishek@gmail.com">consult_with_abishek@gmail.com</a></p>
+    <p>&copy; 2025 PlayStore by Abishek</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
